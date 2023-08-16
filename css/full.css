@@ -60,3 +60,36 @@ header a{
 header img{
     height: 90%;
 }
+
+.boxPri{
+    width: 100%;
+}
+
+.titlePri{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.listSoft{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+}
+
+.listSoft img, .listWebApp img, .listServ img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+.listSoft p{
+    width: 100%;
+}
+
+.item{
+    width: 360px;
+    margin: 0 10px;
+}
