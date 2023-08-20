@@ -26,7 +26,7 @@
         <p>Sistema: <span>Windows / Celular</span></p>
         <p>Requisito: <span>Navegador Web ou Gerenciador PDF</span></p>
         <p>Preço: <span> R$ 2,00</span></p>
-        <p>Detalhes: <span>Após salvar ficará disponível online, sem custos para acessar e baixar.</span></p>
+        <p onclick="detalhes()">Detalhes: <span>Após salvar ficará disponível online, sem custos para acessar e baixar.</span></p>
         <p>Observações: <span>Curriculum em PDF</span></p>
         <div class="butopt">
             <button id="btnBuy">Comprar</button>
@@ -52,22 +52,22 @@
     </div>
     <div class="row1">
         <ul>
-            <li>
+            <li id="1">
                 <div class="item">
                     <span><a href="">Curriculum</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(1)">Detalhes</button></span>
                 </div>
             </li>
-            <li>
+            <li id="2">
                 <div class="item">
                     <span><a href="">Contratos</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(2)">Detalhes</button></span>
                 </div>
             </li>
-            <li>
+            <li id="3">
                 <div class="item">
                     <span><a href="">Cartão de Visita</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(3)">Detalhes</button></span>
                 </div>
             </li>
         </ul>
@@ -78,46 +78,46 @@
     </div>
     <div class="row1">
         <ul>
-            <li>
+            <li id="4">
                 <div class="item">
                     <span class="imgD"><img src="./img/Delivery.jpg" alt=""></span>
                     <span class="titDes"><a href="">Lanchonete e Pizzaria</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(4)">Detalhes</button></span>
                 </div>
             </li>
-            <li>
+            <li id="5">
                 <div class="item">
                     <span class="imgD"><img src="./img/Loja.jpg" alt=""></span>
                     <span class="titDes"><a href="">Loja de Roupas / Variedades</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(5)">Detalhes</button></span>
                 </div>
             </li>
-            <li>
+            <li id="6">
                 <div class="item">
                     <span class="imgD"><img src="./img/Sorteio.jpg" alt=""></span>
                     <span class="titDes"><a href="">Sistema de Sorteios</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(6)">Detalhes</button></span>
                 </div>
             </li>
-            <li>
+            <li id="7">
                 <div class="item">
                     <span class="imgD"><img src="./img/whatsb.png" alt=""></span>
                     <span class="titDes"><a href="">Formulário de Orçamento (WhatsAPP)</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(7)">Detalhes</button></span>
                 </div>
             </li>
-            <li>
+            <li id="8">
                 <div class="item">
                     <span class="imgD"><img src="./img/convites.jpg"></span>
                     <span class="titDes"><a href="">Convite Digital interativo</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(8)">Detalhes</button></span>
                 </div>
             </li>
-            <li>
+            <li id="9">
                 <div class="item">
                     <span class="imgD"><img src="./img/Escala.jpg"></span>
                     <span class="titDes"><a href="">Escala de Trabalho / Folga</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(9)">Detalhes</button></span>
                 </div>
             </li>
         </ul>
@@ -128,16 +128,18 @@
     </div>
     <div class="row1">
         <ul>
-            <li>
+            <li id="10">
                 <div class="item">
                     <span class="imgD"><img src="./img/ListaCompras.JPG"></span>
                     <span class="titDes"><a href="">Lista de Compras</a></span>
-                    <span><button>Detalhes</button></span>
+                    <span><button onclick="detalhes(10)">Detalhes</button></span>
                 </div>
             </li>
         </ul>
     </div>
     <!--https://cdnjs.com/libraries/html2pdf.js-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/kim.js"></script>
 </body>
 </html>
