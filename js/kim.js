@@ -1,7 +1,7 @@
 function detalhes(id){
     //alert (id)
     $.ajax({
-        url:"http://convites.infinityfreeapp.com/reqs.php",
+        url:"http://convites.infinityfreeapp.com/reqs.php?acao=detalhes?id=1",
         type: "GET",
         data:{
             acao: 'detalhes', id:id
