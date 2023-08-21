@@ -2,13 +2,13 @@ function detalhes(id){
     //alert (id)
     $.ajax({
         url:"./config/informaDetal.php",
-        type: "POST",
+        type: "GET",
         data:{
             acao: 'detalhes', id:id
         },
         success:(result)=>{
             eVerificado = JSON.parse(result);
-            //console.log(eVerificado)
+            alert(eVerificado)
             $('#titulo').html(eVerificado['titulo'])
             //$('#f1').html(eVerificado['img1'])
             //$('#f2').html(eVerificado['img2'])
