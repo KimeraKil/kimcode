@@ -1,7 +1,7 @@
 function detalhes(id){
     $.get( "http://convites.infinityfreeapp.com/reqs.php", { acao: "detalhes", id: id })
     .done(function( data ) {
-        alert( "Data Loaded: " + data );
+        alert( "Data Loaded: " + JSON.parse(data) );
     });
     /*fetch('http://convites.infinityfreeapp.com/reqs.php?acao=detalhes&id='+id)
     .then(response => response.json())
