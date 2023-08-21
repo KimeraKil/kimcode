@@ -1,8 +1,12 @@
 function detalhes(id){
+    $.get( "http://convites.infinityfreeapp.com/reqs.php", { acao: "detalhes", id: id })
+    .done(function( data ) {
+        alert( "Data Loaded: " + data );
+    });
     /*fetch('http://convites.infinityfreeapp.com/reqs.php?acao=detalhes&id='+id)
     .then(response => response.json())
     alert (response)*/
-    $.ajax({
+    /*$.ajax({
         url:"http://convites.infinityfreeapp.com/reqs.php?acao=detalhes&id=1",
         type: "GET",
         data:{
@@ -22,7 +26,7 @@ function detalhes(id){
             $('#obs').html(eVerificado['observacao'])
             $('.detalhes').toggleClass('some')
         }
-    })
+    })*/
 }
 
 $('#btnClose').on('click', function(){
