@@ -1,32 +1,15 @@
 function detalhes(id){
-    $.get( "http://convites.infinityfreeapp.com/reqs.php", { acao: "detalhes", id: id })
-    .done(function( data ) {
-        alert( "Data Loaded: " + JSON.parse(data) );
-    });
-    /*fetch('http://convites.infinityfreeapp.com/reqs.php?acao=detalhes&id='+id)
-    .then(response => response.json())
-    alert (response)*/
-    /*$.ajax({
-        url:"http://convites.infinityfreeapp.com/reqs.php?acao=detalhes&id=1",
-        type: "GET",
-        data:{
-            acao: 'detalhes', id:id
-        },
-        success:(result)=>{
-            eVerificado = JSON.parse(result);
-            alert(eVerificado)
-            $('#titulo').html(eVerificado['titulo'])
-            //$('#f1').html(eVerificado['img1'])
-            //$('#f2').html(eVerificado['img2'])
-            //$('#f3').html(eVerificado['img3'])
-            $('#sis').html(eVerificado['sistema'])
-            $('#req').html(eVerificado['requisito'])
-            $('#valor').html(eVerificado['preco'])
-            $('#detail').html(eVerificado['detalhes'])
-            $('#obs').html(eVerificado['observacao'])
-            $('.detalhes').toggleClass('some')
-        }
-    })*/
+    const options = {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'default'
+    }
+
+    fetch(`http://convites.infinityfreeapp.com/reqs.php?acao=detalhes&id=${id}`, options)
+    .then(response => {response.json()
+        .then(data => console.log(data))
+    })
+    .catch(e => console.log('Deu Erro: '+ e,message))
 }
 
 $('#btnClose').on('click', function(){
