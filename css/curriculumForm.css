@@ -1,0 +1,231 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana;
+    user-select:none;
+}
+
+#nome, #logradouro, #Bairro, #cidade{
+    text-transform: capitalize;
+}
+
+body{
+    background-color: black;
+    color: #06F3AF;
+    width: 360px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    height: 70px;
+    border-bottom: 2px solid #06F3AF;
+    font-size: 1rem;
+    /*font-size: calc(var(--tamanho) + calc(var(--tamanhoTela) -1000));*/
+}
+
+header .incubs{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 5px 0 5px 0;
+}
+
+.slog{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    color: #f5ba26;
+    font-size: 0.9rem;
+}
+
+header a{
+    color: #06F3AF;
+    text-decoration: none;
+    text-shadow: 0px 0px 10px #f5ba26, 0 0 10px black;
+}
+
+header img{
+    height: 90%;
+}
+
+.boxForm{
+    width: 95%;
+    height: 95%;
+    border: 2px solid #06F3AF;
+    border-radius: 20px;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.camposForm{
+    width: 98%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.boxForm h1{
+    color: #f5ba26;
+}
+
+#titForm{
+    text-align: center;
+    word-wrap: break-word;
+    color: #f5ba26;
+    width: 90%;
+}
+
+input {
+    width: 90%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #06F3AF;
+    margin: 3px 0;
+}
+
+.citState{
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+select{
+    width: 42%;
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid #06F3AF;
+    margin: 3px ;
+}
+
+.some{
+    display: none;
+}
+
+.butons{
+    cursor: pointer;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.butons button{
+    margin: 0 5px;
+    padding: 5px;
+    width: 100px;
+    border: 1px solid white;
+    border-radius: 12px;
+}
+
+.infoContato span{
+    width: 80%;
+    font-size: 12px;
+    text-decoration: underline;
+    text-align: center;
+    margin: 5px;
+}
+
+#Foto {
+    display: none;
+}
+
+.infoPessoal img{
+    max-height: 150px;
+    border-radius: 12px;
+}
+
+.conts{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.conts #contato1{
+    width: 80%;
+}
+
+#rec1, #rec2, #rec3{
+    width: 90%;
+    margin: 0 5px;
+}
+
+.conts label{
+    display: flex;
+    margin: 0 10px;
+}
+
+.infoDetalhes select{
+    width: 90%;
+}
+
+.expPro span:nth-child(3),
+.expPro span:nth-child(6),
+.expPro span:nth-child(9),
+.expPro span:nth-child(12),
+.expPro span:nth-child(15),
+.expPro span:nth-child(21),
+.expPro span:nth-child(24),
+.expPro span:nth-child(27)
+{
+    margin-bottom: 10px;
+}
+
+.cursosIn{
+    border: 2px solid #06F3AF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    height: 220px;
+    margin: 0 auto;
+    overflow-y: scroll;
+}
+
+.cursosIn span, .expPro span{
+    width: 95%;
+    text-align: right;
+}
+
+.cursosIn::-webkit-scrollbar, .expPro::-webkit-scrollbar{
+    display: none;
+}
+
+.expPro{
+    width: 90%;
+    height: 400px;
+    border: 2px solid #06F3AF;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow-y: scroll;
+}
+  
+#dica{
+cursor: default;
+display:none;
+height: 20px;
+background: rgb(0, 38, 255);
+position: absolute;
+color: white;
+}

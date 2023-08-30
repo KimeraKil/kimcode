@@ -15,6 +15,7 @@ h1{
     text-align: center;
     padding: 30px 0 10px 0;
     margin: 0px 0 10px 0;
+    font-size: 28px;
 }
 
 h4{
@@ -26,13 +27,17 @@ h4{
     padding: 3px 0;
 }
 
+#objetvivoP, #grauEscolar{
+    font-size: 14px;
+}
+
 .dadosP{
     width: 95%;
     margin: 10px auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 .dadosP .texts{
@@ -65,7 +70,7 @@ span{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .container ul{
@@ -78,18 +83,67 @@ span{
 
 .containerEx{
     display: flex;
-    flex-direction: column;
-    width: 95%;
+    flex-direction: row;
+    max-width: 95%;
+    height: 350px;
     margin: 10px auto;
-    font-size: 12px;
+    font-size: 13px;
 }
 
 .expPro{
-    width: 45%;
-    margin: 10px 0;
+    width: 100%;
+    margin: 9px 0;
 }
 
 .expPro p{
     font-weight: bold;
     margin: 0 0 0 10px;
+}
+
+.flex-flowEP{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    max-width: 50%;
+    height: 95%;
+    margin-left: 2px ;
+}
+
+.expPro span{
+    font-size: 13px;
+}
+
+.container .flex-flow{
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+    width: 50%;
+}
+
+.flex-flowC{
+    width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    flex-direction: column;
+}
+
+.flex-flowC span{
+    text-align: left;
+}
+
+.flex-flow span{
+    height: auto;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 3px;
+    margin-left: 5px;
+    word-break: break-all;
+}
+
+#cursos{
+    max-height: 120px;
+}
+
+#cursos span:nth-child(even){
+    background-color: #cccccc83;
 }

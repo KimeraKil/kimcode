@@ -10,6 +10,14 @@
     font-family: 'Nunito', sans-serif;
 }
 
+
+
+.breveD{
+    font-size: .8rem;
+    color: #06F3AF;
+    text-shadow: 0px 0px 10px #f5ba26, 0 0 10px black;
+}
+
 body{
     background-color: black;
     color: #06F3AF;
@@ -127,6 +135,7 @@ ul li{
 .detalhes{
     position: absolute;
     width: 360px;
+    height: 95vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,8 +170,27 @@ ul li{
     margin: 10px auto;
 }
 
-.some{
-    display: none;
+.fDetal{
+    position: absolute;
+    width: 360px;
+    height: 95vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    border: 4px solid #06F3AF;
+    /*background: linear-gradient(to right, #0d3747, #020f14);*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    padding: 20px 10px;
+    border-radius: 28px;
+}
+
+.fDetal img{
+    width: 100%; 
 }
 
 .fotoD img{
@@ -170,8 +198,21 @@ ul li{
     border-radius: 12px;
 }
 
+.informsP{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 310px;
+    max-height: 310px; 
+    overflow-y: scroll;
+}
+
+.some{
+    display: none;
+}
+
 .detalhes p{
-    text-align: left;
+    text-align: center; 
     width: 100%;
     padding: 0 0 5px 10px;
     font-weight: bold;
@@ -182,6 +223,17 @@ ul li{
 .detalhes span{
     font-weight: normal;
     color: white;
+    text-align: center;
+    width: 100%;
+    text-align: left;
+    border: 1px solid #06F3AF;
+    border-radius: 8px;
+    padding: 5px;
+    text-align: center;
+}
+
+.informsP::-webkit-scrollbar{ 
+    display: none;
 }
 
 .butopt{
