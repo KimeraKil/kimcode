@@ -16,18 +16,28 @@
     <title>Inicio</title>
 </head>
 <body>
-    <div class="detalhes some">
+    <div class="detalhes ">
+        <div class="fDetal some">
+            <img id="dim" src="./img/CurriculumAmostra.jpg">
+        </div>
         <label id="titulo">Curriculum Online</label>
         <div class="fotoD">
             <img id="f1" src="./img/Delivery.jpg">
             <img id="f2" src="./img/Delivery.jpg">
             <img id="f3"src="./img/Delivery.jpg">
         </div>
-        <p>Sistema: <span id="sis">Windows / Celular</span></p>
-        <p>Requisito: <span id="req">Navegador Web ou Gerenciador PDF</span></p>
-        <p>Valor: <span id="valor"> R$ 2,00</span></p>
-        <p>Detalhes: <span id="detail">Após salvar ficará disponível online, sem custos para acessar e baixar.</span></p>
-        <p>Observações: <span id="obs">Curriculum em PDF</span></p>
+        <div class="informsP">
+            <p>Sistema: </p> 
+            <span id="sis">Windows / Celular</span>
+            <p>Requisito: </p>
+            <span id="req">Navegador Web ou Gerenciador PDF</span>
+            <p>Valor: </p>
+            <span id="valor"> R$ 2,00</span>
+            <p id="det">Detalhes: </p>
+            <span id="detail">Sistema de Vendas Balcão e Delivery, para Pizzarias, Restaurantes e ou Lanchonetes. Cadastro de Clientes, status de pedido e mesa em atendimento, cadastro de produtos em estoque, impressão (A4/ Cupom 80mm, Cupom 48mm, Cupom 57mm)</span>
+            <p>Observações: </p>
+            <span id="obs">Sistema Não Fiscal (Sem Mensalidade, não precisa de internet)</span>
+        </div>        
         <div class="butopt">
             <button id="btnBuy">Comprar</button>
             <button id="btnChat">Contatar Vendedor</button>
@@ -54,19 +64,19 @@
         <ul>
             <li id="1">
                 <div class="item">
-                    <span><a href="">Curriculum</a></span>
+                    <span><a href="./curriculumForm.html">Curriculum</a></span>
                     <span><button onclick="detalhes(1)">Detalhes</button></span>
                 </div>
             </li>
             <li id="2">
                 <div class="item">
-                    <span><a href="">Contratos</a></span>
+                    <span class="breveD">Em Breve</span><span><a href="">Contratos</a></span>
                     <span><button onclick="detalhes(2)">Detalhes</button></span>
                 </div>
             </li>
             <li id="3">
                 <div class="item">
-                    <span><a href="">Cartão de Visita</a></span>
+                    <span class="breveD">Em Breve</span><span><a href="">Cartão de Visita</a></span>
                     <span><button onclick="detalhes(3)">Detalhes</button></span>
                 </div>
             </li>

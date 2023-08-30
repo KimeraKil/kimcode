@@ -16,40 +16,156 @@
     <title>Curriculum Formulario</title>
 </head>
 <body>
-    <input type="text" id="nome" placeholder="Nome Completo">
-    <input type="text" id="eLog" placeholder="Logradouro ex:(Rua Joaquim Dantas)">
-    <input type="text" id="eNum" placeholder="Numero">
-    <input type="text" id="eBairro" placeholder="Nome do Bairro">
-    <input type="text" id="eCidade" placeholder="Cidade">
-    <select id="estado" name="estado">
-        <option value="AC">Acre</option>
-        <option value="AL">Alagoas</option>
-        <option value="AP">Amapá</option>
-        <option value="AM">Amazonas</option>
-        <option value="BA">Bahia</option>
-        <option value="CE">Ceará</option>
-        <option value="DF">Distrito Federal</option>
-        <option value="ES">Espírito Santo</option>
-        <option value="GO">Goiás</option>
-        <option value="MA">Maranhão</option>
-        <option value="MT">Mato Grosso</option>
-        <option value="MS">Mato Grosso do Sul</option>
-        <option value="MG">Minas Gerais</option>
-        <option value="PA">Pará</option>
-        <option value="PB">Paraíba</option>
-        <option value="PR">Paraná</option>
-        <option value="PE">Pernambuco</option>
-        <option value="PI">Piauí</option>
-        <option value="RJ">Rio de Janeiro</option>
-        <option value="RN">Rio Grande do Norte</option>
-        <option value="RS">Rio Grande do Sul</option>
-        <option value="RO">Rondônia</option>
-        <option value="RR">Roraima</option>
-        <option value="SC">Santa Catarina</option>
-        <option value="SP" selected>São Paulo</option>
-        <option value="SE">Sergipe</option>
-        <option value="TO">Tocantins</option>
-        <option value="EX">Estrangeiro</option>
-    </select>
+    <!--<span id="dica">Dica do Conteudo</span>-->
+    <header>
+        <img src="./img/KimCodeLogo2.png" alt="">
+        <div class="incubs">
+            <div class="slog">
+                <h3>Formulário Curriculum</h3>
+            </div>
+            <div class="links">
+                <a href="">Inicio</a>
+                <a href="">Links Úteis</a>
+                <a href="">Login</a>
+            </div>            
+        </div>
+    </header>
+    <div class="boxForm">
+        <h2 id="titForm">Dados Pessoais</h2>
+        <div id="p1" class="camposForm infoPessoal">
+             <label for="Foto"><img id="sltNewPhoto" src="./img/moc.jpg"></label>
+            <span><input type="file" id="Foto"><label for="Foto" id="statLoad">Click Aqui para adicionar Foto 3X4</label></span>
+            <input type="text" id="nome" placeholder="Nome Completo" maxlength="42">
+            <input type="text" id="idade" placeholder="DD/MM/AAAA (01/01/2005)" onkeypress="return event.charCode >= 47 && event.charCode <= 57" maxlength="10">
+            <input type="text" id="logradouro" placeholder="Rua Joaquim Dantas (sem complemento)" maxlength="35">
+            <input type="text" id="numero" placeholder="Numero" onkeypress="return event.charCode >= 47 && event.charCode <= 57" maxlength="5">
+            <input type="text" id="Bairro" placeholder="Nome do Bairro" maxlength="28">
+            <div class="citState">
+                <select id="estado" name="estado">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP" selected>São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+                <input type="text" placeholder="Cidade" id="cidade" maxlength="40">
+                <!--<select id="sltCidade" name="cidade">           
+                </select>--> 
+            </div>
+            <input type="text" id="CEP" placeholder="CEP (00000-000)" onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode <= 109" maxlength="9">
+        </div>
+        <div id="p2" class="camposForm infoContato some">
+            <div class="conts">
+                <input type="text" id="contato1" placeholder="Telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode <= 109" maxlength="14"><label for="recado1" style="color: transparent;"><input type="checkbox" id="recado1" hidden>=Recado</label>
+            </div>
+            <div class="conts">
+                <input type="text" id="contato2" placeholder="Telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode <= 109" maxlength="14"><label for="recado2"><input type="checkbox" id="recado2">Recado</label>
+            </div>
+            <div class="conts">
+                <input type="text" id="contato3" placeholder="Telefone" onkeypress="return event.charCode >= 48 && event.charCode <= 57 || event.charCode <= 109" maxlength="14"><label for="recado3"><input type="checkbox" id="recado3">Recado</label>
+            </div>
+            <input type="text" id="email" placeholder="E-mail">
+        </div>
+        <div id="p3" class="camposForm infoDetalhes some">
+            <input type="text" id="objetvivo" value="A Disposição da Empresa" placeholder="Objetivo na Empresa / Area Desejada" maxlength="65">
+            <select name="grauEscolar" id="sltEnsino">
+                <option value="0">Analfabeto</option>
+                <option value="1">Fundamental incompleto(1ª ao 9ª)</option>
+                <option value="2">Fundamental completo (1ª ao 9ª)</option>
+                <option value="3">Médio incompleto (1º ao 3º ano)</option>
+                <option value="4" selected>Médio completo (1º ao 3º ano)</option>
+                <option value="5">Superior (Cursando)</option>
+                <option value="6">Superior completo (ou graduação)</option>
+                <option value="7">Pós-graduação (Cursando)</option>
+                <option value="8">Pós-graduação completo</option>
+                <option value="9">Mestrado (Cursando)</option>
+                <option value="10">Mestrado completo</option>
+                <option value="11">Doutorado (Cursando)</option>
+                <option value="12">Doutorado completo</option>
+                <option value="13">Pós-Doutorado (Cursando)</option>
+                <option value="14">Pós-Doutorado completo</option>
+            </select>
+            <div class="cursosIn">
+                <span>1 <input type="text" id="cursos1" value="Informática Básica" placeholder="Curso 1" maxlength="50"></span>
+                <span>2 <input type="text" id="cursos2" value="Inglês Básico" placeholder="Curso 2" maxlength="50"></span>
+                <span>3 <input type="text" id="cursos3" placeholder="Curso 3" maxlength="50"></span>
+                <span>4 <input type="text" id="cursos4" placeholder="Curso 4" maxlength="50"></span>
+                <span>5 <input type="text" id="cursos5" placeholder="Curso 5" maxlength="50"></span>
+                <span>6 <input type="text" id="cursos6" placeholder="Curso 6" maxlength="50"></span>
+                <span>7 <input type="text" id="cursos7" placeholder="Curso 7" maxlength="50"></span>
+                <span>8 <input type="text" id="cursos8" placeholder="Curso 8" maxlength="50"></span>
+                <span>9 <input type="text" id="cursos9" placeholder="Curso 9" maxlength="50"></span>
+                <span>10 <input type="text" id="cursos10" placeholder="Curso 10" maxlength="50"></span>
+                <span>11 <input type="text" id="cursos11" placeholder="Curso 11" maxlength="50"></span>
+                <span>12 <input type="text" id="cursos12" placeholder="Curso 12" maxlength="50"></span>
+            </div>
+            <input type="text" id="qualificacao1" value="Competência para organizar a rotina de trabalho" placeholder="Qualificações" maxlength="100">
+            <input type="text" id="qualificacao2" value="Facilidade de aprendizado para novas tarefas" placeholder="Qualificações" maxlength="100">
+            <input type="text" id="qualificacao3" value="Postura adequada para o trabalho em equipe" placeholder="Qualificações" maxlength="100">
+            <input type="text" id="qualificacao4" placeholder="Qualificações" maxlength="100">
+        </div>
+        <div id="p4" class="camposForm infoExperi1 some">
+            <div class="expPro">
+                <span>1 <input type="text" id="empresa1" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo1" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo1" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>2 <input type="text" id="empresa2" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo2" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo2" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>3 <input type="text" id="empresa3" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo3" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo3" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>4 <input type="text" id="empresa4" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo4" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo4" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>5 <input type="text" id="empresa5" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo5" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo5" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>6 <input type="text" id="empresa6" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo6" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo6" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>7 <input type="text" id="empresa7" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo7" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo7" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>8 <input type="text" id="empresa8" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo8" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo8" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>9 <input type="text" id="empresa9" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo9" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo9" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"></span>
+                <span>10 <input type="text" id="empresa10" placeholder="Nome da Empresa" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="cargo10" placeholder="Cargo / Função" maxlength="40"></span>
+                <span style="color: black;">* <input type="text" id="periodo10" placeholder="Periodo(01/01/2020 à 01/01/2022)" maxlength="25"> </span>
+            </div>            
+        </div>
+        <div class="butons">
+            <button id="btnVoltar">Voltar</button>
+            <button id="btnProx">Próximo</button>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./js/kim.js"></script>
 </body>
 </html>
