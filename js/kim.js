@@ -158,7 +158,8 @@ $('#dim').on('click', function(){
 })
 
 function detalhes(id){
-    fetch('https://kimdb.000webhostapp.com/itens/'+id)
+    fetch('https://kimcode.site/itens/'+id)
+    //fetch('https://kimdb.000webhostapp.com/itens/'+id)
     .then(function (response) {
         // Caso a requisição tenha sucesso irá cair aqui
         return response.json();
