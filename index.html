@@ -16,15 +16,22 @@
     <title>Inicio</title>
 </head>
 <body>
+    <div id="backLoad" class="">
+        <div class="loader">
+            <div class="inner one"></div>
+            <div class="inner two"></div>
+            <div class="inner three"></div>
+        </div>
+    </div>
     <div class="detalhes some">
         <div class="fDetal some">
-            <img id="dim" src="./img/Curriculum.jpg">
+            <img id="dim" src="./img/KimCodeLogo2.png">
         </div>
         <label id="titulo">Curriculum Online</label>
         <div class="fotoD">
-            <img id="f1" src="./img/Delivery.jpg">
-            <img id="f2" src="./img/Delivery.jpg">
-            <img id="f3"src="./img/Delivery.jpg">
+            <img id="f1" src="./img/KimCode LOGO.png">
+            <img id="f2" src="./img/KimCode LOGO.png">
+            <img id="f3"src="./img/KimCode LOGO.png">
         </div>
         <div class="informsP">
             <p>Sistema: </p> 
@@ -38,9 +45,7 @@
             <p>Observações: </p>
             <span id="obs">Sistema Não Fiscal (Sem Mensalidade, não precisa de internet)</span>
         </div>        
-        <div class="butopt">
-            <button id="btnBuy">Comprar</button>
-            <button id="btnChat">Contatar Vendedor</button>
+        <div class="butopt">            
             <button id="btnClose">Fechar</button>   
         </div>        
     </div>
@@ -51,33 +56,33 @@
                 <h3>Soluções para o seu dia a dia!</h3>
             </div>
             <div class="links">
-                <a href="">Inicio</a>
+                <a href="index.html">Inicio</a>
                 <a href="">Links Úteis</a>
-                <a href="">Login</a>
+                <a href="login.html">Login</a>
             </div>            
         </div>
     </header>
     <div class="titulos">
-        <h2>Serviços Online</h2>
+        <h2>Serviços Online &#9989</h2>
     </div>
     <div class="row1">
         <ul>
             <li id="1">
                 <div class="item">
-                    <span><a href="./curriculumForm.html">Curriculum</a></span>
-                    <span><button onclick="detalhes(1)">Detalhes</button></span>
+                    <span>Curriculum</span>
+                    <span><button onclick="detalhes(0)">Detalhes</button></span>
                 </div>
             </li>
             <li id="2">
                 <div class="item">
-                    <span class="breveD">Em Breve</span><span><a href="">Contratos</a></span>
-                    <span><button onclick="detalhes(2)">Detalhes</button></span>
+                    <span class="breveD">Em Breve</span><span>Contratos</span>
+                    <span><button onclick="detalhes(1)">Detalhes</button></span>
                 </div>
             </li>
             <li id="3">
                 <div class="item">
-                    <span class="breveD">Em Breve</span><span><a href="">Cartão de Visita</a></span>
-                    <span><button onclick="detalhes(3)">Detalhes</button></span>
+                    <span class="breveD">Em Breve</span><span>Cartão de Visita</span>
+                    <span><button onclick="detalhes(2)">Detalhes</button></span>
                 </div>
             </li>
         </ul>
@@ -91,43 +96,43 @@
             <li id="4">
                 <div class="item">
                     <span class="imgD"><img src="./img/Delivery.jpg" alt=""></span>
-                    <span class="titDes"><a href="">Lanchonete e Pizzaria</a></span>
-                    <span><button onclick="detalhes(4)">Detalhes</button></span>
+                    <span class="titDes">Lanchonete e Pizzaria</span>
+                    <span><button onclick="detalhes(3)">Detalhes</button></span>
                 </div>
             </li>
             <li id="5">
                 <div class="item">
                     <span class="imgD"><img src="./img/Loja.jpg" alt=""></span>
-                    <span class="titDes"><a href="">Loja de Roupas / Variedades</a></span>
-                    <span><button onclick="detalhes(5)">Detalhes</button></span>
+                    <span class="titDes">Loja de Roupas / Variedades</span>
+                    <span><button onclick="detalhes(4)">Detalhes</button></span>
                 </div>
             </li>
             <li id="6">
                 <div class="item">
                     <span class="imgD"><img src="./img/Sorteio.jpg" alt=""></span>
-                    <span class="titDes"><a href="">Sistema de Sorteios</a></span>
-                    <span><button onclick="detalhes(6)">Detalhes</button></span>
+                    <span class="titDes">Sistema de Sorteios</span>
+                    <span><button onclick="detalhes(5)">Detalhes</button></span>
                 </div>
             </li>
             <li id="7">
                 <div class="item">
                     <span class="imgD"><img src="./img/whatsb.png" alt=""></span>
-                    <span class="titDes"><a href="">Formulário de Orçamento (WhatsAPP)</a></span>
-                    <span><button onclick="detalhes(7)">Detalhes</button></span>
+                    <span class="titDes">Formulário de Orçamento (WhatsAPP)</span>
+                    <span><button onclick="detalhes(6)">Detalhes</button></span>
                 </div>
             </li>
             <li id="8">
                 <div class="item">
                     <span class="imgD"><img src="./img/convites.jpg"></span>
-                    <span class="titDes"><a href="">Convite Digital interativo</a></span>
-                    <span><button onclick="detalhes(8)">Detalhes</button></span>
+                    <span class="titDes">Convite Digital interativo</span>
+                    <span><button onclick="detalhes(7)">Detalhes</button></span>
                 </div>
             </li>
             <li id="9">
                 <div class="item">
                     <span class="imgD"><img src="./img/Escala.jpg"></span>
-                    <span class="titDes"><a href="">Escala de Trabalho / Folga</a></span>
-                    <span><button onclick="detalhes(9)">Detalhes</button></span>
+                    <span class="titDes">Escala de Trabalho / Folga</span>
+                    <span><button onclick="detalhes(8)">Detalhes</button></span>
                 </div>
             </li>
         </ul>
@@ -141,15 +146,15 @@
             <li id="10">
                 <div class="item">
                     <span class="imgD"><img src="./img/ListaCompras.JPG"></span>
-                    <span class="titDes"><a href="">Lista de Compras</a></span>
-                    <span><button onclick="detalhes(10)">Detalhes</button></span>
+                    <span class="titDes">Lista de Compras</span>
+                    <span><button onclick="detalhes(9)">Detalhes</button></span>
                 </div>
             </li>
         </ul>
     </div>
     <!--https://cdnjs.com/libraries/html2pdf.js-->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>-->
     <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-    <script src="./js/kim.js"></script>
+    <script src="./js/kimNoLog.js"></script>
 </body>
 </html>
